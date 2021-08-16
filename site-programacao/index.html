@@ -29,13 +29,23 @@
         mark {
             background-color: white;
         }
+        input#escr {
+            background-color: black;
+            color: white;
+        }
+        input#clar {
+            background-color: white;
+        }
     </style>
 </head>
 <body>
-    <h1> <mark>---   Comandos Básicos Para Aprender Python   ---</mark> </h1>
+    <h1> <mark id="title">---   Comandos Básicos Para Aprender Python   ---</mark> </h1>
+    <hr>
+    <input type="button" value="Tema Claro" onclick="claro()" id="clar">
+    <input type="button" value="Tema Escuro" onclick="escuro()" id=escr >
     <br>
     
-    <hr>
+
     <hr>
     <h2> Índice </h2>
     <hr>
@@ -165,6 +175,21 @@
     <hr>
     <script>
         // window.alert("Aprenda Comandos Básicos de Python")
+        function claro() {
+            let tema = window.document.body
+            let title = window.document.getElementById("title")
+            tema.style.background = "white"
+            tema.style.color = "black"
+            title.style.background = "black"
+            title.style.color = "white"
+        }
+        function escuro() {
+            let tema = window.document.body
+            tema.style.background = "black"
+            tema.style.color = "white"
+            title.style.background = "white"
+            title.style.color = "black"
+        }
     </script>
 </body>
 </html>
