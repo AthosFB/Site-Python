@@ -14,6 +14,11 @@
         }
         h1 {
             font: normal 50px Arial;
+            background-color: sandybrown;
+            width: 1390pt;
+            height: 30pt;
+            line-height: 30pt;
+            text-align: center;
         }
         h2 {
             font: normal 30px Arial;
@@ -35,14 +40,27 @@
         }
         input#clar {
             background-color: white;
+            color: black;
+        }
+
+        div {
+            background-color: sandybrown;
+        }
+
+        div#email {
+            width: 1390pt;
+            line-height: 30pt;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1> <mark id="title">---   Comandos Básicos Para Aprender Python   ---</mark> </h1>
-    <hr>
-    <input type="button" value="Tema Claro" onclick="claro()" id="clar">
-    <input type="button" value="Tema Escuro" onclick="escuro()" id=escr >
+    <div>
+        <input type="button" value="Tema Claro" onclick="claro()" id="clar">
+        <input type="button" value="Tema Escuro" onclick="escuro()" id=escr >
+        <h1 id="title">Comandos Básicos Para Aprender Python</h1>
+        <div id="email"><a href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcRzCbfNPZtSfZglMCQSXSbTnSHBljvgHvlFshtcnmhMSJGClzHwrBrQDKxtSCzZFltSLqXGh" target="_blank" rel="external"><img src="fotos/email-reduzido.png" alt="Email"></a></div>
+    </div id="cabeca">
     <br>
     
 
@@ -177,18 +195,13 @@
         // window.alert("Aprenda Comandos Básicos de Python")
         function claro() {
             let tema = window.document.body
-            let title = window.document.getElementById("title")
             tema.style.background = "white"
             tema.style.color = "black"
-            title.style.background = "black"
-            title.style.color = "white"
         }
         function escuro() {
             let tema = window.document.body
             tema.style.background = "black"
             tema.style.color = "white"
-            title.style.background = "white"
-            title.style.color = "black"
         }
     </script>
 </body>
