@@ -80,9 +80,9 @@
 <body>
     <div>
 
-        <input type="button" value="Tema Claro" onclick="claro()" id="clar">
+        <input type="button" value="Tema Claro" onclick="claro()" onmouseenter="clrenter()" onmouseout="clrsai()" id="clar">
 
-        <input type="button" value="Tema Escuro" onclick="escuro()" id=escr >
+        <input type="button" value="Tema Escuro" onclick="escuro()" onmouseenter="escenter()" onmouseout="escsai()" id=escr >
 
         <h1 id="title">Comandos Básicos Para Aprender Python</h1>
         
@@ -245,6 +245,22 @@
         }
         function gitsaiu() {
             txt2.innerText = ""
+        }
+        function clrenter() {
+            let txt = window.document.getElementById("clar")
+            txt.style.color = "lightcoral"
+        }
+        function escenter() {
+            let txt = window.document.getElementById("escr")
+            txt.style.color = "lightcoral"
+        }
+        function clrsai() {
+            let txt = window.document.getElementById("clar")
+            txt.style.color = "black"
+        }
+        function escsai() {
+            let txt = window.document.getElementById("escr")
+            txt.style.color = "white"
         }
     </script>
 </body>
