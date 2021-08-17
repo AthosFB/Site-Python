@@ -11,12 +11,15 @@
             background-color: black;
             color: white;
             font: normal 15px Arial;
+            /*marigin e borda 0 */
+            margin: 0;
+            padding: 0;
         }
         h1 {
             font: normal 50px Arial;
             background-color: gray;
-            width: 1385pt;
-            height: 30pt;
+            width: 100vmax;
+            height: 10vmin;
             line-height: 30pt;
             text-align: center;
             color: black;
@@ -75,6 +78,13 @@
         h2#ind {
             margin-top: 300px;
         }
+        /*As próximas linha é feito com meu CSS*/
+        .quadrado{
+            height: 30vh;
+			width: 23vw;
+			background-color: rgb(228, 117, 117);
+        }
+
     </style>
 </head>
 <body>
@@ -146,8 +156,12 @@
 
     <h2> 1º | print() | pt.1 </h2>
     <hr>
-    <p> O comando print( ) no python pode ser usado para colocar <ins>qualquer informação</ins> de texto que esteja dentro das aspas, <br>
+        <div class="quadrado">
+            <p>O comando print( ) no python pode ser usado para colocar <ins>qualquer informação</ins> de texto que esteja dentro das aspas, <br>
         as aspas podem ser: simples(' ') ou duplas(" ") </p>
+        
+        </div>
+
     <small>Veja a Imagem: </small>
     <br>
     <img src="fotos/print.png" alt="Comando print no Python">
