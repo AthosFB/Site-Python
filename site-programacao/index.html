@@ -14,11 +14,12 @@
         }
         h1 {
             font: normal 50px Arial;
-            background-color: sandybrown;
-            width: 1390pt;
+            background-color: gray;
+            width: 1385pt;
             height: 30pt;
             line-height: 30pt;
             text-align: center;
+            color: black;
         }
         h2 {
             font: normal 30px Arial;
@@ -44,33 +45,56 @@
         }
 
         div {
-            background-color: sandybrown;
-        }
-
-        div#email {
-            width: 1390pt;
-            line-height: 30pt;
-            text-align: left;
+            background-color: gray;
+            float:left;
         }
         div#github {
-            width: 1390pt;
-            line-height: 30pt;
-            text-align: left;
+            background-color: gray;
+            height: 70px;
+            width: 80px;
+            float:right;
+        }
+        div#email {
+            background-color: gray;
+            height: 70px;
+            margin-left: 40px;
+            float:left;
+        }
+        p#emeapa {
+            margin-top: 0px;
+        }
+        p#gitapa {
+            margin-top: 0px;
+        }
+        p#gitapa {
+            font: normal 15px Arial;
+        }
+        p#emeapa {
+            font: normal 15px Arial;
+        }
+        h2#ind {
+            margin-top: 300px;
         }
     </style>
 </head>
 <body>
     <div>
+
         <input type="button" value="Tema Claro" onclick="claro()" id="clar">
+
         <input type="button" value="Tema Escuro" onclick="escuro()" id=escr >
+
         <h1 id="title">Comandos Básicos Para Aprender Python</h1>
-        <div id="email"><a href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcRzCbfNPZtSfZglMCQSXSbTnSHBljvgHvlFshtcnmhMSJGClzHwrBrQDKxtSCzZFltSLqXGh" target="_blank" rel="external"><img src="fotos/email-reduzido.png" alt="Email"></a></div>
-        <div id="github"><a href="https://github.com/AthosFB" target="_blank" rel="external"><img src="fotos/github-reduzido.jpg" alt="Email"></a></div>
+        
+        <div id="email"><a href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcRzCbfNPZtSfZglMCQSXSbTnSHBljvgHvlFshtcnmhMSJGClzHwrBrQDKxtSCzZFltSLqXGh" target="_blank" rel="external"><img src="fotos/o-email.png" alt="Email" onmouseenter="emeentro()" onmouseout="emesaiu()"> <p id="emeapa"> </p> </a></div>
+
+        <div id="github"><a href="https://github.com/AthosFB" target="_blank" rel="external"><img src="fotos/github-40.png" alt="Email" 
+        onmouseenter="gitentro()" onmouseout="gitsaiu()"> <p id="gitapa"> </p></a></div>
+
     </div id="cabeca">
     <br>
-    
 
-    <hr>
+    <hr id="ind">
     <h2> Índice </h2>
     <hr>
 <h3> Início </h3>
@@ -198,7 +222,8 @@
     <img src="fotos/primitivos.png" alt="Uma foto que demonstra os tipos primitivos básicos no python">
     <hr>
     <script>
-        // window.alert("Aprenda Comandos Básicos de Python")
+        let txt1 = window.document.getElementById("emeapa")
+        let txt2 = window.document.getElementById("gitapa")
         function claro() {
             let tema = window.document.body
             tema.style.background = "white"
@@ -208,6 +233,18 @@
             let tema = window.document.body
             tema.style.background = "black"
             tema.style.color = "white"
+        }
+        function emeentro(){
+            txt1.innerText = "Email"
+        }
+        function gitentro() {
+            txt2.innerText = "Github"
+        }
+        function emesaiu() {
+            txt1.innerText = ""
+        }
+        function gitsaiu() {
+            txt2.innerText = ""
         }
     </script>
 </body>
