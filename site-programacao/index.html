@@ -57,7 +57,7 @@
         }
         div#email {
             background-color: gray;
-            height: 70px;
+            height: 75px;
             margin-left: 40px;
             float:left;
         }
@@ -80,6 +80,10 @@
             float: left;
             margin-left: 30px;
         }
+        p#proapa {
+            font: normal 15px Arial;
+            margin-top: 0;
+        }
     </style>
 </head>
 <body>
@@ -96,7 +100,7 @@
         <div id="github"><a href="https://github.com/AthosFB" target="_blank" rel="external"><img src="fotos/github-40.png" alt="Email" 
         onmouseenter="gitentro()" onmouseout="gitsaiu()"> <p id="gitapa"> </p></a></div>
 
-        <div id="projetos"><a href="paginas/apps.html"><img src="fotos/Projetos.png" alt="Projetos"></a></div>
+        <div id="projetos"><a href="paginas/apps.html" target="_blank" rel="internal"><img src="fotos/Projetos.png" alt="Projetos" onmouseenter="proentrou()" onmouseout="prosaiu()"><p id="proapa"></p></a></div>
 
     </div id="cabeca">
     <br>
@@ -231,6 +235,7 @@
     <script>
         let txt1 = window.document.getElementById("emeapa")
         let txt2 = window.document.getElementById("gitapa")
+        let txt3 = window.document.getElementById("proapa")
         function claro() {
             let tema = window.document.body
             tema.style.background = "white"
@@ -268,6 +273,12 @@
         function escsai() {
             let txt = window.document.getElementById("escr")
             txt.style.color = "white"
+        }
+        function proentrou() {
+            txt3.innerText = "Projetos"
+        }
+        function prosaiu() {
+            txt3.innerText = ""
         }
     </script>
 </body>
