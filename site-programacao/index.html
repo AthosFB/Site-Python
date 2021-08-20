@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
     <title> Python </title>
     <style>
         body {
@@ -90,9 +91,9 @@
 <body>
     <div>
 
-        <input type="button" value="Tema Claro" onclick="claro()" id="clar">
+        <input type="button" value="Tema Claro" onclick="claro()" onmouseenter="clrenter()" onmouseout="clrsai()" id="clar">
 
-        <input type="button" value="Tema Escuro" onclick="escuro()" id=escr >
+        <input type="button" value="Tema Escuro" onclick="escuro()" onmouseenter="escenter()" onmouseout="escsai()" id=escr >
 
         <h1 id="title">Comandos Básicos Para Aprender Python</h1>
         
@@ -100,6 +101,8 @@
 
         <div id="github"><a href="https://github.com/AthosFB" target="_blank" rel="external"><img src="fotos/github-40.png" alt="Email" 
         onmouseenter="gitentro()" onmouseout="gitsaiu()"> <p id="gitapa"> </p></a></div>
+
+        <div id="projetos"><a href="paginas/apps.html" target="_blank" rel="internal"><img src="fotos/Projetos.png" alt="Projetos" onmouseenter="proentrou()" onmouseout="prosaiu()"><p id="proapa"></p></a></div>
 
     </div id="cabeca">
     <br>
@@ -238,6 +241,7 @@
     <script>
         let txt1 = window.document.getElementById("emeapa")
         let txt2 = window.document.getElementById("gitapa")
+        let txt3 = window.document.getElementById("proapa")
         function claro() {
             let tema = window.document.body
             tema.style.background = "white"
@@ -259,6 +263,28 @@
         }
         function gitsaiu() {
             txt2.innerText = ""
+        }
+        function clrenter() {
+            let txt = window.document.getElementById("clar")
+            txt.style.color = "sandybrown"
+        }
+        function escenter() {
+            let txt = window.document.getElementById("escr")
+            txt.style.color = "sandybrown"
+        }
+        function clrsai() {
+            let txt = window.document.getElementById("clar")
+            txt.style.color = "black"
+        }
+        function escsai() {
+            let txt = window.document.getElementById("escr")
+            txt.style.color = "white"
+        }
+        function proentrou() {
+            txt3.innerText = "Projetos"
+        }
+        function prosaiu() {
+            txt3.innerText = ""
         }
     </script>
 </body>
