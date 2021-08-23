@@ -5,12 +5,17 @@ body {
 }
 h1 {
     font: normal 70px Arial;
-    background:url(../fotos/fundo-do-titulo.png); 
-    width: 1385pt;
+    background:url(../fotos/fundo-do-titulo.png);
+    width: 1000pt;
     height: 30pt;
     line-height: 30pt;
     text-align: center;
     color: white;
+}
+div#cabeca {
+    margin-top: 50px;
+    box-shadow: 6px 6px 10px white;
+    margin-left: 200px;
 }
 h2 {
     font: normal 30px Arial;
@@ -22,7 +27,7 @@ h3 {
 }
 p {
     font: normal 19px Arial;
-}
+} 
 mark {
     background-color: white;
 }
