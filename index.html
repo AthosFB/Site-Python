@@ -11,13 +11,16 @@
 <body>
     <div id="cabeca">
 
-        <input type="button" value="Tema Claro" onclick="claro()" onmouseenter="clrenter()" onmouseout="clrsai()" id="clar">
+    <div id="temas">
+    <input type="button" value="Tema Claro" onclick="claro()" onmouseenter="clrenter()" onmouseout="clrsai()" id="clar">
+    <input type="button" value="Tema Escuro" onclick="escuro()" onmouseenter="escenter()" onmouseout="escsai()" id=escr >
+    </div>
 
-        <input type="button" value="Tema Escuro" onclick="escuro()" onmouseenter="escenter()" onmouseout="escsai()" id=escr >
+    <br>
         
-        <picture>
-            <source media="(max-width: 300px)" srcset="fotos/titulo-dinamico/T-P.png" type="image/png">
-            <source media="(max-width: 1050px)" srcset="fotos/titulo-dinamico/T-M.png" type="image/png">
+        <picture id="Ft-titulo">
+            <source media="(max-width: 850px)" srcset="fotos/titulo-dinamico/T-P.png" type="image/png">
+            <source media="(max-width: 1250px)" srcset="fotos/titulo-dinamico/T-M.png" type="image/png">
             <img src="fotos/titulo-dinamico/T-G.png" alt="Título">
         </picture>
 

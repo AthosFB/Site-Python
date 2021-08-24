@@ -3,19 +3,10 @@ body {
     color: white;
     font: normal 15px Arial;
 }
-h1 {
-    font: normal 70px Arial;
-    background:url(../fotos/fundo-do-titulo.png);
-    width: 1000pt;
-    height: 30pt;
-    line-height: 30pt;
-    text-align: center;
-    color: white;
-}
 div#cabeca {
     margin-top: 50px;
     box-shadow: 6px 6px 10px white;
-    margin-left: 200px;
+    margin-left: 350px;
 }
 h2 {
     font: normal 30px Arial;
@@ -37,10 +28,8 @@ input#escr {
 }
 input#clar {
     background-color: white;
-
     color: black;
 }
-
 div {
     background:url(../fotos/fundo-do-titulo.png); 
     float:left;
@@ -48,12 +37,14 @@ div {
 div#github {
     background:url(../fotos/fundo-do-titulo.png); 
     margin-left: 30px;
+    margin-top: 50px;
     height: 70px;
     float:left;
 }
 div#email {
     background:url(../fotos/fundo-do-titulo.png); 
     height: 75px;
+    margin-top: 50px;
     margin-left: 40px;
     float:left;
 }
@@ -73,9 +64,22 @@ h2#ind {
 div#projetos {
     float: left;
     margin-left: 30px;
+    margin-top: 50px;
 }
 p#proapa {
     margin-top: 0;
     font: normal 15px Arial;
     color: blanchedalmond;
+}
+picture#Ft-titulo {
+    font: normal 70px Arial;
+    width: 1000pt;
+    height: 30pt;
+    line-height: 30pt;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+div#temas {
+    height: 50px;
 }
