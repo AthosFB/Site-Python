@@ -83,3 +83,15 @@ picture#Ft-titulo {
 div#temas {
     height: 50px;
 }
+p#music {
+    margin-top: 50px;
+    float: right;
+    height: 50px;
+    width: 80px;
+    font: normal 25px Times;
+    line-height: 50px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: rgb(65, 164, 182);
+    box-shadow: 3px 3px 5px white;
+}
