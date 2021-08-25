@@ -98,6 +98,8 @@ p#music {
 p#fecha {
     float: left;
     margin-left: 10px;
+    color: red;
+    font-size: 15px;
 }
 p#music2 {
     font: normal 25px Times;
