@@ -33,7 +33,7 @@
 
         <div id="projetos"><a href="paginas/apps.html" target="_blank" rel="internal"><img src="fotos/Projetos.png" alt="Projetos" onmouseenter="proentrou()" onmouseout="prosaiu()"><p id="proapa"></p></a></div>
 
-            <p id="music" onmouseenter="musientro()" onmouseout="musisaiu()">Music</p>
+            <p id="music" onmouseenter="musientro()">Music</p>
 
     </div>
     <br>
@@ -217,16 +217,16 @@
             musi.style.height = "500px"
             musi.style.width = "500px"
             indi.style.marginTop = "750px"
-            musi.innerHTML = '<p>Music</p> <audio controls> <source src="midia/musica.mp3" type="audio/mpeg"> <source src="midia/musica.ogg" type="audio/ogg"><source src="midia/musica.wav" type="audio/wav"></audio>'
+            musi.innerHTML = '<p id="fecha" onclick="musisaiu()">X</p> <p id="music2">Music</p> <audio controls> <source src="midia/musica.mp3" type="audio/mpeg"> <source src="midia/musica.ogg" type="audio/ogg"><source src="midia/musica.wav" type="audio/wav"></audio>'
         }
-        /* function musisaiu() {
+        function musisaiu() {
             let musi = window.document.getElementById("music")
             let indi = window.document.getElementById("ind")
             musi.style.height = "50px"
             musi.style.width = "80px"
             indi.style.marginTop = "300px"
-            musi.innerHTML = '<p>Music</p>' 
-        } */
+            musi.innerHTML = '<p id="music3">Music</p>' 
+        }
     </script>
 </body>
 </html>

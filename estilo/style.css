@@ -95,3 +95,16 @@ p#music {
     background-color: rgb(65, 164, 182);
     box-shadow: 3px 3px 5px white;
 }
+p#fecha {
+    float: left;
+    margin-left: 10px;
+}
+p#music2 {
+    font: normal 25px Times;
+}
+p#music3 {
+    font: normal 25px Times;
+    text-align: center;
+    line-height: 0px;
+    margin-right: 0px;
+}
